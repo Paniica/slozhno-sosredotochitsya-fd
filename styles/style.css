@@ -2,7 +2,7 @@
 .page {
   font-family: var(--font-family);
   background-color: var(--background-color);
-  
+}
 
 .decorated-zone::before {
   align-self: flex-start;
