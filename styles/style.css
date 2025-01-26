@@ -17,6 +17,7 @@
   border-inline-end: 1px solid var(--decoration-color);
   top: 0;
   right: 0;
+  rotate: 270deg;
 }
 
 .decorated-zone::after {
@@ -62,7 +63,6 @@
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   block-size: 25px;
-  justify-self: end;
   color: var(--accent-color);
   font-size: var(--regular-font-size);
   text-transform: uppercase;
@@ -330,6 +330,18 @@
   .topic--grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
+  }
+
+  .topic--grid .topic__title {
+    grid-column: 1 / 4;
+  }
+
+  .topic--grid .topic__card {
+    grid-column: span 1;
+  }
+
+  .topic--grid .special-card {
+    grid-column: span 1;
   }
 
   .topic--highlighted .topic__title {
